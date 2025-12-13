@@ -295,9 +295,13 @@ strong {
    ===================================================== */
 .hero-section {
   display: grid;
-  grid-template-columns: 1fr 300px;
+  grid-template-columns: 1fr 300px; /* keep for pages that have a right image */
   gap: var(--space-2xl);
   align-items: start;
+}
+
+.hero-section.hero-single {
+  grid-template-columns: 1fr; /* Home page: make text full width */
 }
 
 .hero-content h1 {
