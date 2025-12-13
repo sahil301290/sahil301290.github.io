@@ -204,10 +204,11 @@ body {
 }
 
 .content-wrapper {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   padding: var(--space-2xl) var(--space-xl);
 }
+
 
 /* Page Header */
 .page-header {
