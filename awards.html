@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Awards, honors and academic service by Dr. Sahil Sharma">
+  <title>Awards & Service | Dr. Sahil Sharma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="profile-photo">
+          <span class="profile-initials">SS</span>
+        </div>
+        <h1 class="sidebar-name">Dr. Sahil Sharma</h1>
+        <p class="sidebar-title">Postdoctoral Researcher<br>Ulster University, UK</p>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+          <li class="nav-item">
+            <a href="publications.html" class="nav-link">Publications</a>
+            <ul class="nav-submenu">
+              <li><a href="journals.html" class="nav-link">Journals</a></li>
+              <li><a href="conferences.html" class="nav-link">Conferences</a></li>
+              <li><a href="chapters.html" class="nav-link">Book Chapters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li class="nav-item"><a href="awards.html" class="nav-link active">Awards & Service</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <header class="page-header">
+          <h1 class="page-title">Awards & Service</h1>
+          <p class="page-subtitle">Honors, Recognition & Academic Service</p>
+        </header>
+
+        <h2>Awards & Honors</h2>
+        
+        <div class="award-item">
+          <span class="award-year">2025</span>
+          <div class="award-content">
+            <h4>Associate Fellow of Higher Education Academy (AFHEA)</h4>
+            <p>Advance HE, UK</p>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <span class="award-year">2023</span>
+          <div class="award-content">
+            <h4>UKRI Global Talent Visa</h4>
+            <p>UK Research and Innovation (Valid: Jul 2023 – Jul 2026)</p>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <span class="award-year">2019</span>
+          <div class="award-content">
+            <h4>UGC NET-CS Qualified</h4>
+            <p>Percentile: 98.91 (All India Rank 469 out of 42,913 candidates)</p>
+          </div>
+        </div>
+        
+        <div class="award-item">
+          <span class="award-year">2013</span>
+          <div class="award-content">
+            <h4>GATE Computer Science Qualified</h4>
+            <p>Percentile: 96.71, All India Rank 7,354 out of 224,160 candidates</p>
+          </div>
+        </div>
+
+        <h2>Academic Service</h2>
+        
+        <h3>Committee Membership</h3>
+        <ul>
+          <li><strong>External Member, PhD Scholar Research Committee</strong><br>
+          SR University, Warangal, India (Aug 2025 – Present)</li>
+        </ul>
+
+        <h3>Conference Organization</h3>
+        <ul>
+          <li><strong>Session Chair / Co-Chair:</strong>
+            <ul>
+              <li>IICTDS 2025 – International Conference on Intelligent Computing Techniques for Data Science</li>
+              <li>ICMLDE 2024 – International Conference on Machine Learning and Data Engineering</li>
+              <li>PDGC 2024 – Parallel, Distributed and Grid Computing Conference</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h3>Invited Talks</h3>
+        <ul>
+          <li><strong>Keynote Speaker:</strong> International Workshop on Applied ML and XAI in Healthcare (Jul 2025)</li>
+        </ul>
+
+        <h3>Peer Review</h3>
+        <p>I serve as a peer reviewer for the following journals:</p>
+        <ul>
+          <li>Scientific Reports (Nature Publishing Group)</li>
+          <li>IET Computer Vision</li>
+          <li>IET Image Processing</li>
+          <li>Applied Intelligence</li>
+          <li>Archives of Computational Methods in Engineering</li>
+          <li>International Journal of Computer Vision</li>
+        </ul>
+
+        <h2>Professional Memberships</h2>
+        
+        <ul>
+          <li>Advance HE (Associate Fellow)</li>
+          <li>IEEE (Member)</li>
+        </ul>
+
+        <h2>Media & Outreach</h2>
+        
+        <ul>
+          <li><strong>YouTube Channel:</strong> Educational content on AI/ML topics<br>
+          <a href="https://www.youtube.com/channel/UC2oter2CC_d_8351_vly3IA" target="_blank">youtube.com/channel/UC2oter2CC_d_8351_vly3IA</a></li>
+        </ul>
+
+        <footer class="footer">
+          <p>© 2025 Dr. Sahil Sharma. All rights reserved.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const sidebar = document.getElementById('sidebar');
+    mobileToggle.addEventListener('click', () => sidebar.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

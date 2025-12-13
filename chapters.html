@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Chapters by Dr. Sahil Sharma">
+  <title>Book Chapters | Dr. Sahil Sharma</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="profile-photo">
+          <span class="profile-initials">SS</span>
+        </div>
+        <h1 class="sidebar-name">Dr. Sahil Sharma</h1>
+        <p class="sidebar-title">Postdoctoral Researcher<br>Ulster University, UK</p>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="research.html" class="nav-link">Research</a></li>
+          <li class="nav-item">
+            <a href="publications.html" class="nav-link">Publications</a>
+            <ul class="nav-submenu">
+              <li><a href="journals.html" class="nav-link">Journals</a></li>
+              <li><a href="conferences.html" class="nav-link">Conferences</a></li>
+              <li><a href="chapters.html" class="nav-link active">Book Chapters</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="teaching.html" class="nav-link">Teaching</a></li>
+          <li class="nav-item"><a href="awards.html" class="nav-link">Awards & Service</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <header class="page-header">
+          <h1 class="page-title">Book Chapters</h1>
+          <p class="page-subtitle">Contributions to Edited Volumes</p>
+        </header>
+
+        <p><a href="publications.html">← Back to Publications Overview</a></p>
+
+        <ul class="pub-list">
+          <li class="pub-item">
+            <span class="pub-number">B2</span>
+            <strong class="pub-title">Application of Genetic Algorithms in Healthcare: A Review</strong><br>
+            <span class="pub-authors"><strong>Sharma, S.</strong> and Kumar, V.</span><br>
+            <span class="pub-venue">In: Next Generation Healthcare Informatics, Studies in Computational Intelligence, vol 1039, pp. 75–86. Springer, Singapore, 2022</span>
+            <p class="mt-md text-muted">
+              This chapter presents a comprehensive review of genetic algorithm applications in healthcare, 
+              covering optimization problems in medical diagnosis, treatment planning, and resource allocation.
+            </p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.1007/978-981-19-2416-3_5" target="_blank" class="pub-link">DOI</a>
+              <a href="https://link.springer.com/chapter/10.1007/978-981-19-2416-3_5" target="_blank" class="pub-link">Springer</a>
+            </div>
+          </li>
+          
+          <li class="pub-item">
+            <span class="pub-number">B1</span>
+            <strong class="pub-title">Transfer Learning in 2.5D Face Image for Occlusion Presence and Gender Classification</strong><br>
+            <span class="pub-authors"><strong>Sharma, S.</strong>‡ and Kumar, V.</span><br>
+            <span class="pub-venue">In: Handbook of Research on Deep Learning Innovations and Trends, pp. 97–113. IGI Global, 2019</span>
+            <p class="mt-md text-muted">
+              This chapter explores transfer learning approaches for analyzing 2.5D facial images, 
+              demonstrating effective methods for detecting occlusions and classifying gender using 
+              pre-trained deep neural networks.
+            </p>
+            <div class="pub-links">
+              <a href="https://doi.org/10.4018/978-1-5225-7862-8.ch006" target="_blank" class="pub-link">DOI</a>
+              <a href="https://www.igi-global.com/chapter/transfer-learning-in-25d-face-image-for-occlusion-presence-and-gender-classification/219292" target="_blank" class="pub-link">IGI Global</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="info-box mt-xl">
+          <p class="mb-0">
+            <strong>†</strong> Work conducted during postdoctoral research at Ulster University<br>
+            <strong>‡</strong> Work conducted as part of PhD research at TIET, India
+          </p>
+        </div>
+
+        <footer class="footer">
+          <p>© 2025 Dr. Sahil Sharma. All rights reserved.</p>
+        </footer>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const mobileToggle = document.getElementById('mobileToggle');
+    const sidebar = document.getElementById('sidebar');
+    mobileToggle.addEventListener('click', () => sidebar.classList.toggle('active'));
+    document.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
