@@ -10,16 +10,12 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Sidebar Navigation -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <div class="profile-photo">
-          <span class="profile-initials">SS</span>
-        </div>
+        <img src="images/photo.jpeg" alt="Dr. Sahil Sharma" class="profile-photo">
         <h1 class="sidebar-name">Dr. Sahil Sharma</h1>
         <p class="sidebar-title">Postdoctoral Researcher<br>Ulster University, UK</p>
       </div>
-      
       <nav>
         <ul class="nav-menu">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -40,14 +36,10 @@
       </nav>
     </aside>
 
-    <!-- Mobile Menu Toggle -->
     <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
 
-    <!-- Main Content -->
     <main class="main-content">
       <div class="content-wrapper">
         <header class="page-header">
@@ -90,7 +82,7 @@
           </div>
           
           <div class="card">
-            <h4 class="card-title">Generative Models</h4>
+            <h4 class="card-title">Generative Models & Synthetic Data</h4>
             <p class="card-content">
               GANs, VAEs, and Conditional GMMs for synthetic data generation, particularly 
               for HDLSS (High Dimension, Low Sample Size) spectroscopy data augmentation.
@@ -102,18 +94,22 @@
         
         <div class="info-box">
           <h3>AI-EPOCMON: AI-enabled Point-of-Care Monitoring</h3>
-          <p><strong>Role:</strong> Lead AI and XAI Work-Packages</p>
+          <p><strong>Role:</strong> Lead ML and XAI Work-Packages</p>
           <p><strong>Funding:</strong> US–Ireland R&D Partnership (NSF, UKRI, SFI)</p>
+          <p><strong>Partners:</strong> Ulster University, Texas A&M University, Dublin City University</p>
           <p><strong>Period:</strong> Aug 2023 – Present</p>
           <p class="mt-md">
             This project focuses on developing AI-enabled point-of-care diagnostic tools for 
             myocardial infarction detection. My responsibilities include:
           </p>
           <ul>
-            <li>Developing explainable ML models for cardiac troponin I (cTnI) classification from SERRS spectra</li>
-            <li>Building conditional Gaussian Mixture Models for synthetic Raman spectra generation</li>
-            <li>Creating XAI visualization frameworks for multimodal medical data</li>
-            <li>Collaborating with Texas A&M University and Dublin City University</li>
+            <li>Developing LIME-based interpretable classification pipeline for SERRS spectral data (694 features, 37 patients): Random Forest with XAI-driven feature selection achieving 83.57% accuracy, 91% recall. Published in Biosensors &amp; Bioelectronics (Q1, IF 10.5).</li>
+            <li>Building temporal colorimetric ML pipeline for DNAzyme-based cTnI assay: engineered 84 features across 6 colour spaces (RGB, HSV, Lab, greyscale, delta, temporal), achieving 90.91% accuracy on human samples with 100% recall on blind validation. Published in Small (Wiley, Q1, IF 12.1).</li>
+            <li>Developing interpretable synthetic data pipeline using class-conditional GMMs with physiological renoising and UMAP-KNN manifold filtering. Published at IEEE SENSORS 2025.</li>
+            <li>Contributing to GAN-based synthetic data study (WGAN-GP, CTGAN, CTAB-GAN+ with GA/NSGA-II). Accepted at ICPRAM 2026.</li>
+            <li>Authoring comprehensive 59-page survey on XAI across five medical data modalities (EHR, behavioural, omics, sensor, imaging). Available on bioRxiv.</li>
+            <li>Conducting exploratory ML analysis on electrochemical epilepsy drug response data (DCU collaboration).</li>
+            <li>Managing sensitive biomedical data under UCLA IRB and TAMU IACUC ethical frameworks.</li>
           </ul>
         </div>
 
@@ -134,23 +130,34 @@
 
         <h3>IIT Mandi Project: Snow Avalanche Forecasting (2015)</h3>
         <p>
-          Worked as Project Associate on a DRDO-SASE funded project for snow avalanche detection 
-          and forecasting using machine learning techniques.
+          Worked as Project Associate on a DRDO–SASE funded project, developing SVM and GA-based predictive 
+          models for snow-avalanche forecasting using meteorological and snowpack data.
         </p>
 
         <h2>Research Collaborations</h2>
         
         <ul>
           <li><strong>Texas A&M University, USA</strong> – Prof. Gerard Coté (AI-EPOCMON)</li>
-          <li><strong>Dublin City University, Ireland</strong> – Dr. Saugat Bhattacharyya (Epilepsy research)</li>
-          <li><strong>Ulster University, UK</strong> – Prof. Liam McDaid, Dr. Samuel Mabbott</li>
-          <li><strong>Thapar Institute, India</strong> – Prof. Vinay Kumar (Ph.D. supervision)</li>
+          <li><strong>Dublin City University, Ireland</strong> – AI-EPOCMON partner; epilepsy drug response collaboration</li>
+          <li><strong>Ulster University, UK</strong> – Dr. Saugat Bhattacharyya (Manager), Prof. Liam McDaid (Research Director), Dr. Samuel Mabbott</li>
+          <li><strong>NIT Jalandhar / Thapar Institute, India</strong> – Dr. Vijay Kumar (Ph.D. Supervisor)</li>
+          <li><strong>SR University, India</strong> – External PhD SRC member (Prof. Deepak Garg, MEng Supervisor)</li>
         </ul>
 
         <h2>Datasets Released</h2>
         
         <div class="pub-item">
           <span class="pub-number">1</span>
+          <strong class="pub-title">Spring JIRA Bug Dataset</strong><br>
+          <span class="pub-authors">Narayana, S. and <strong>Sharma, S.</strong></span><br>
+          <span class="pub-venue">IEEE Dataport, June 2024</span>
+          <div class="pub-links">
+            <a href="https://ieeedataport.org/documents/spring-jira-bug-dataset" target="_blank" class="pub-link">IEEE Dataport</a>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-number">2</span>
           <strong class="pub-title">Colour-Rendered Bosphorus Projections Database</strong><br>
           <span class="pub-authors"><strong>Sharma, S.</strong>, Sood, A., and Kumar, V.</span><br>
           <span class="pub-venue">IEEE Dataport, April 2024</span>
@@ -160,7 +167,7 @@
         </div>
 
         <footer class="footer">
-          <p>© 2025 Dr. Sahil Sharma. All rights reserved.</p>
+          <p>&copy; 2026 Dr. Sahil Sharma. All rights reserved.</p>
         </footer>
       </div>
     </main>
