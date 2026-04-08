@@ -64,7 +64,7 @@
             <p>
               I am currently working on the <strong>AI-EPOCMON</strong> project, a US–Ireland R&D Partnership 
               funded by NSF and UKRI. My work involves developing explainable machine learning models 
-              for cardiac troponin I diagnostics using Raman/SERRS spectroscopy.
+              for cardiac troponin I diagnostics using Raman/SERRS spectroscopy and temporal colorimetric data.
             </p>
             
             <p>
@@ -79,7 +79,7 @@
         <!-- Quick Stats -->
         <div class="stats-grid">
           <div class="stat-box">
-            <span class="stat-value">650+</span>
+            <span class="stat-value">720+</span>
             <span class="stat-label">Citations</span>
           </div>
           <div class="stat-box">
@@ -87,11 +87,11 @@
             <span class="stat-label">h-index</span>
           </div>
           <div class="stat-box">
-            <span class="stat-value">21+</span>
+            <span class="stat-value">35+</span>
             <span class="stat-label">Publications</span>
           </div>
           <div class="stat-box">
-            <span class="stat-value">7+</span>
+            <span class="stat-value">8+</span>
             <span class="stat-label">Years Teaching</span>
           </div>
         </div>
@@ -118,7 +118,7 @@
           <ul class="info-list">
             <li>
               <span class="info-label">Position:</span>
-              <span class="info-value">Research Associate & Hourly Paid Lecturer</span>
+              <span class="info-value">Research Associate</span>
             </li>
             <li>
               <span class="info-label">Institution:</span>
@@ -138,34 +138,31 @@
         <!-- Recent News -->
         <h2>Recent News</h2>
         <ul>
-          <li><strong>Nov 2025:</strong> Started as Hourly Paid Lecturer for COM808 Operating Systems at Ulster University.</li>
-          <li><strong>Jun 2025:</strong> Awarded Associate Fellow of Higher Education Academy (AFHEA).</li>
-          <li><strong>2025:</strong> Paper published in <em>Biosensors & Bioelectronics</em> (Q1) on cardiac troponin I classification.</li>
-          <li><strong>Oct 2025:</strong> Presented poster at IEEE SENSORS 2025, Vancouver, Canada.</li>
-          <li><strong>2024:</strong> Paper accepted at ICPRAM 2026 on HDLSS Raman spectroscopy data generation.</li>
+          <li><strong>2026:</strong> Paper published in <em>Small</em> (Wiley, Q1, IF 12.1) on high sensitivity cardiac troponin I detection via MNP-locked aptamer.</li>
+          <li><strong>2026:</strong> Paper published in <em>IEEE IT Professional Magazine</em> — CRBP: A Benchmark Dataset of Color-Rendered 3D-to-2.5D Facial Projections.</li>
+          <li><strong>2026:</strong> Paper published in <em>Mathematical and Computational Applications</em> (JCR Q2) on ML-based autoscaling for elastic cloud applications.</li>
+          <li><strong>2026:</strong> Paper accepted at ICPRAM 2026 on HDLSS Raman spectroscopy data generation using GANs and genetic algorithms.</li>
+          <li><strong>Dec 2025:</strong> Joined American Society of Engineers (AMSE).</li>
+          <li><strong>Nov 2025 – Jan 2026:</strong> Served as Hourly Paid Lecturer for COM808 Operating Systems (MSc) at Ulster University.</li>
+          <li><strong>Oct 2025:</strong> Paper published and poster presented at IEEE SENSORS 2025, Vancouver, Canada.</li>
+          <li><strong>Jul 2025:</strong> Keynote Speaker at International Workshop on Applied ML and XAI in Healthcare, Amity University Punjab, India (IEEE Student Branch).</li>
+          <li><strong>Jun 2025:</strong> Awarded Associate Fellow of Higher Education Academy (AFHEA), Advance HE.</li>
+          <li><strong>2025:</strong> Paper published in <em>Biosensors &amp; Bioelectronics</em> (Q1, IF 10.5) on cardiac troponin I classification.</li>
         </ul>
 
         <footer class="footer">
-          <p>© 2025 Dr. Sahil Sharma. All rights reserved.</p>
+          <p>&copy; 2026 Dr. Sahil Sharma. All rights reserved.</p>
         </footer>
       </div>
     </main>
   </div>
 
   <script>
-    // Mobile menu toggle
     const mobileToggle = document.getElementById('mobileToggle');
     const sidebar = document.getElementById('sidebar');
-    
-    mobileToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-    });
-    
-    // Close sidebar when clicking outside on mobile
+    mobileToggle.addEventListener('click', () => { sidebar.classList.toggle('active'); });
     document.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768 && 
-          !sidebar.contains(e.target) && 
-          !mobileToggle.contains(e.target)) {
+      if (window.innerWidth <= 768 && !sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
         sidebar.classList.remove('active');
       }
     });
